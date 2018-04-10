@@ -1,5 +1,6 @@
 # List of dev files.
 DEVSRC = $(CHIBIOS)/dev/main.c \
+         $(CHIBIOS)/dev/usbcfg.c \
 		 $(CHIBIOS)/dev/control/pid.c \
 		 $(CHIBIOS)/dev/info_interaction/remote.c \
 		 $(CHIBIOS)/dev/info_interaction/motor_interaction.c \

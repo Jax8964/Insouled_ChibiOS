@@ -39,8 +39,7 @@ static const CANConfig cancfg = {
 
 void process_gimbal_feedback(CANRxFrame* rxmsg) {
     int motor_id =rxmsg->SID - 0x205;
-    gimbal.motor->present_angle = (float)(rxmsg->data8[0] << 8 | rxmsg->data8[1]) / 0x1FFF * 360
-
+    gimbal.motor->present_angle = (float)(rxmsg->data8[0] << 8 | rxmsg->data8[1]) / 0x1FFF * 360;
 }
 
 static THD_WORKING_AREA(can_rx1_wa, 256);
